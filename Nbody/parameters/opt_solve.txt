@@ -1,0 +1,3 @@
+barnes_hut	no
+sph	no
+solver	verlet

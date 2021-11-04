@@ -1,0 +1,14 @@
+num_bodies	1000
+body_mass_distribution	no
+normalized_mass	1
+body_radius_distribution	no
+normalized_radius	1
+body_position_distribution	uniform_rectangle
+body_velocity_distribution	uniform_rectangle
+softening	0.0001
+collisions	no
+viscosity	no
+time_initial	0.0
+time_final	1.0
+variable_step	no
+step_min	0.0001

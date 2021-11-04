@@ -1,0 +1,1 @@
+nohup bash launch_simulation.sh > output.out & 
