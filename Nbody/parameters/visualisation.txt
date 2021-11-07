@@ -1,4 +1,4 @@
-visualize	off
+visualize	on
 background_color	black
 plot_axis	off
 body_point_style	.

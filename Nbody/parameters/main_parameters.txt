@@ -1,4 +1,4 @@
-num_bodies	1000
+num_bodies	100
 body_mass_distribution	no
 normalized_mass	1
 body_radius_distribution	no

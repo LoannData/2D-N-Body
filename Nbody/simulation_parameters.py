@@ -3,7 +3,7 @@ import numpy as np
 # Structure of the simulation 
 myfile0_title = "./parameters/structure.txt"
 myfile0 = open(myfile0_title,"w")
-dimension = 2                                                                                   # (1, 2, 3) : Dimensions accepted for the simulation 
+dimension = 3                                                                                   # (1, 2, 3) : Dimensions accepted for the simulation 
 myfile0.write("dimension"+"\t"+str(dimension)+"\n")
 myfile0.close()
 # ----------------------------------------------------------------
@@ -28,7 +28,7 @@ myfile1.close()
 myfile2_title = "./parameters/main_parameters.txt"
 myfile2 = open(myfile2_title,"w")
 
-num_bodies = 1000                                                                               # (1, ...) : Number of bodies in the simulation 
+num_bodies = 100                                                                             # (1, ...) : Number of bodies in the simulation 
 body_mass_distribution = "no"                                                                   # If you want a specific mass distribution 
 normalized_mass = 1                                                                             # Normalized mass value of bodies 
 body_radius_distribution = "no"                                                                 # If you want a specific radius distribution 
@@ -43,7 +43,7 @@ time_final = 1.0                                                                
 variable_step = "no"
 step_min = 1e-4                                                                                 # Example of step (min value for variable step, fixed value for fixed step)
 
-if (step_min*number_outputs >= 1.) : print "Error ! The time step is too high compared to the number of time outputs"
+if (step_min*number_outputs >= 1.) : print ("Error ! The time step is too high compared to the number of time outputs")
 
 
 myfile2.write("num_bodies"+"\t"+str(num_bodies)+"\n")
@@ -96,7 +96,7 @@ myfile3.close()
 # Visualization parameters 
 myfile4_title="./parameters/visualisation.txt"
 myfile4 = open(myfile4_title,"w")
-visualize = "off" # Do you want to launch vizualisator immediately ? 
+visualize = "on" # Do you want to launch vizualisator immediately ? 
 myfile4.write("visualize"+"\t"+str(visualize)+"\n")
 background_color = "black" # Color of the backgound 
 myfile4.write("background_color"+"\t"+str(background_color)+"\n")
